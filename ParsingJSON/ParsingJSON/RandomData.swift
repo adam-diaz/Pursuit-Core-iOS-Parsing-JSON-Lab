@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RandomUserData: Codable {
+struct RandomData: Codable {
     let results: [UserData]
 }
 
@@ -30,7 +30,7 @@ struct DOB: Codable {
 }
 
 
-extension RandomUserData {
+extension RandomData {
     static func getData() -> [UserData] {
         var user = [UserData]()
         guard let fileURL = Bundle.main.url(forResource: "random_user_generator_api", withExtension: "json") else {
@@ -38,7 +38,7 @@ extension RandomUserData {
         }
         do {
             let data = try Data(contentsOf: fileURL)
-            let userData = try JSONDecoder().decode(RandomUserData.self, from: data)
+            let userData = try JSONDecoder().decode(RandomData.self, from: data)
             user = userData.results
         } catch {
             print("failed to load contents \(error)")

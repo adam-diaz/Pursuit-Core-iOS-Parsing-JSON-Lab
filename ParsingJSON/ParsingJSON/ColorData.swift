@@ -17,7 +17,7 @@ struct ColorData: Codable {
 extension ColorData {
 static func getColors() -> [ColorData] {
     var color = [ColorData]()
-    guard let fileURL = Bundle.main.url(forResource: "colors_api", withExtension: "json") else {
+    guard let fileURL = Bundle.main.url(forResource: "color", withExtension: "json") else {
         fatalError("could not locate json file")
         
     }

@@ -10,6 +10,12 @@ import UIKit
 
 class ColorDetailVC: UIViewController {
 
+    
+    @IBOutlet weak var hexLabel: UILabel!
+    @IBOutlet weak var rgbLabel: UILabel!
+    
+    var color: ColorData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +23,14 @@ class ColorDetailVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func update() {
+        guard let colors = color else {
+            fatalError("couldnt find colors")
+        }
+        
+        var hexStr = colors.hexString
+          hexStr.removeFirst()
+          hexLabel.text = "Hex: \(hexStr)"
+          rgbLabel.text = "Red: \(colors.rgb["r"] ?? 0), Green: \(colors.rgb["g"] ?? 0), Blue: \(colors.rgb["b"] ?? 0)"
     }
-    */
-
 }
