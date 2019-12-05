@@ -18,6 +18,10 @@
 		508D437E2398546000769549 /* WeatherDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D437D2398546000769549 /* WeatherDetailVC.swift */; };
 		508D43802398549700769549 /* ColorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D437F2398549700769549 /* ColorDetailVC.swift */; };
 		508D4382239854A700769549 /* RandomDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508D4381239854A700769549 /* RandomDetailVC.swift */; };
+		50E92CFE2399735C001D1DDE /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E92CFD2399735C001D1DDE /* weather.json */; };
+		50E92D0023997530001D1DDE /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E92CFF23997530001D1DDE /* color.json */; };
+		50E92D0223997858001D1DDE /* random.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E92D0123997858001D1DDE /* random.json */; };
+		50E92D042399796C001D1DDE /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E92D032399796C001D1DDE /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		508D437D2398546000769549 /* WeatherDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailVC.swift; sourceTree = "<group>"; };
 		508D437F2398549700769549 /* ColorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailVC.swift; sourceTree = "<group>"; };
 		508D4381239854A700769549 /* RandomDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDetailVC.swift; sourceTree = "<group>"; };
+		50E92CFD2399735C001D1DDE /* weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		50E92CFF23997530001D1DDE /* color.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
+		50E92D0123997858001D1DDE /* random.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = random.json; sourceTree = "<group>"; };
+		50E92D032399796C001D1DDE /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +78,14 @@
 				508D436523984F0400769549 /* SceneDelegate.swift */,
 				508D43772398501D00769549 /* WeatherViewController.swift */,
 				508D437D2398546000769549 /* WeatherDetailVC.swift */,
-				508D43792398503400769549 /* ColorViewController.swift */,
-				508D437F2398549700769549 /* ColorDetailVC.swift */,
+				50E92D032399796C001D1DDE /* WeatherData.swift */,
+				50E92CFD2399735C001D1DDE /* weather.json */,
 				508D437B2398527B00769549 /* RandomViewController.swift */,
 				508D4381239854A700769549 /* RandomDetailVC.swift */,
+				50E92D0123997858001D1DDE /* random.json */,
+				508D43792398503400769549 /* ColorViewController.swift */,
+				508D437F2398549700769549 /* ColorDetailVC.swift */,
+				50E92CFF23997530001D1DDE /* color.json */,
 				508D436923984F0400769549 /* Main.storyboard */,
 				508D436C23984F0800769549 /* Assets.xcassets */,
 				508D436E23984F0800769549 /* LaunchScreen.storyboard */,
@@ -140,6 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E92D0223997858001D1DDE /* random.json in Resources */,
+				50E92D0023997530001D1DDE /* color.json in Resources */,
+				50E92CFE2399735C001D1DDE /* weather.json in Resources */,
 				508D437023984F0800769549 /* LaunchScreen.storyboard in Resources */,
 				508D436D23984F0800769549 /* Assets.xcassets in Resources */,
 				508D436B23984F0400769549 /* Main.storyboard in Resources */,
@@ -160,6 +175,7 @@
 				508D4382239854A700769549 /* RandomDetailVC.swift in Sources */,
 				508D436423984F0400769549 /* AppDelegate.swift in Sources */,
 				508D437A2398503400769549 /* ColorViewController.swift in Sources */,
+				50E92D042399796C001D1DDE /* WeatherData.swift in Sources */,
 				508D436623984F0400769549 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
