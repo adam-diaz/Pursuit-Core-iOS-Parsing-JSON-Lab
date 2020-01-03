@@ -18,8 +18,7 @@ class ColorDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        update()
     }
     
 
@@ -30,6 +29,7 @@ class ColorDetailVC: UIViewController {
         
         var hexStr = colors.hexString
           hexStr.removeFirst()
+        
           hexLabel.text = "Hex: \(hexStr)"
           rgbLabel.text = "Red: \(colors.rgb["r"] ?? 0), Green: \(colors.rgb["g"] ?? 0), Blue: \(colors.rgb["b"] ?? 0)"
     }

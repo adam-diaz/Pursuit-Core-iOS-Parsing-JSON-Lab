@@ -15,17 +15,17 @@ struct WeatherData: Codable {
 struct CurrentWeather: Codable {
     let name: String
     let main: [String : Double]
-    let weather: [TheWeather]
+    let weather: [Weather]
 }
 
-struct TheWeather: Codable {
+struct Weather: Codable {
     let description: String
 }
 
 extension WeatherData {
 static func getWeather() -> [CurrentWeather] {
     var weather = [CurrentWeather]()
-    guard let fileURL = Bundle.main.url(forResource: "open_weather_api", withExtension: "json") else {
+    guard let fileURL = Bundle.main.url(forResource: "weather", withExtension: "json") else {
               fatalError("could not locate json file")
           }
     do {

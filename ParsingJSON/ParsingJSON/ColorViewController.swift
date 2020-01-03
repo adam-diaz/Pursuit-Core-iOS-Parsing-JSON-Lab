@@ -19,7 +19,7 @@ class ColorViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         tableView.dataSource = self
         tableView.delegate = self
         loadData()
@@ -56,7 +56,9 @@ extension ColorViewController: UITableViewDataSource {
         cell.selectedBackgroundView = backgroundView
           
         
+        
         cell.textLabel?.text = color.name
+        cell.textLabel?.textColor = .white
         
         return cell
     }

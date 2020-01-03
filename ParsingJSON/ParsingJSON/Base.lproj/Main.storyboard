@@ -41,6 +41,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="v1I-Sr-vYn"/>
                     <connections>
+                        <outlet property="tableView" destination="zHV-NY-Yiu" id="w8s-6l-Wg1"/>
                         <segue destination="87w-fq-uu0" kind="show" id="CVW-78-qZa"/>
                     </connections>
                 </viewController>
@@ -98,6 +99,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rrj-2a-gtM"/>
                     <connections>
+                        <outlet property="tableView" destination="8CT-jb-tcB" id="QcV-XX-bru"/>
                         <segue destination="7Kr-T5-3TM" kind="show" id="jlQ-nk-Mbl"/>
                     </connections>
                 </viewController>
@@ -140,6 +142,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Wez-77-WVW" kind="show" id="F5j-G3-bFd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -156,7 +161,6 @@
                     <navigationItem key="navigationItem" id="es7-QR-as0"/>
                     <connections>
                         <outlet property="tableView" destination="whH-MP-lH1" id="qFn-He-Q7q"/>
-                        <segue destination="Wez-77-WVW" kind="show" id="avu-rg-wMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4s-VX-BFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -171,7 +175,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvV-Vj-2dW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvV-Vj-2dW">
                                 <rect key="frame" x="20" y="471" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>

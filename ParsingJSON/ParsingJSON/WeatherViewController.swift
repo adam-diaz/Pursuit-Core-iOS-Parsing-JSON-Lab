@@ -10,13 +10,27 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 
+        @IBOutlet weak var tableView: UITableView!
+    
+    var weather = [CurrentWeather]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadData()
+        
     }
     
+    func loadData() {
+        weather = WeatherData.getWeather()
+    }
 
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let weatherDetail = segue.destination as? WeatherDetailVC, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("could not segue")
+        }
+        weatherDetail.weatherData = weather[indexPath.row]
+    }
+    
 }
+
+

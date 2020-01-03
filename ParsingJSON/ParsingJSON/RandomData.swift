@@ -33,7 +33,7 @@ struct DOB: Codable {
 extension RandomData {
     static func getData() -> [UserData] {
         var user = [UserData]()
-        guard let fileURL = Bundle.main.url(forResource: "random_user_generator_api", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: "random", withExtension: "json") else {
             fatalError("could not locate json file")
         }
         do {
